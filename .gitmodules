@@ -7,3 +7,6 @@
 [submodule "tracker"]
 	path = tracker
 	url = https://github.com/Axlef/tracker.git
+[submodule "nimble"]
+	path = nimble
+	url = https://github.com/Axlef/nimble.git
