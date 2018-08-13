@@ -15,7 +15,7 @@ This repository contains the implementation of an architecture for skeleton dete
 First clone this meta repository with all the submodules:
 
 ```bash
-git clone --recurse-submodules git@protolab.aldebaran.com:protolab/Exploration/Skeleton_action/meta_skeleton_action.git
+git clone --recurse-submodules https://github.com/Axlef/meta_nimble.git
 ```
 
 This system is mainly for use with the Jetson TX2, with already JetPack 3.2 installed. For other systems (compatible TensorRT), you may have to manually install [CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) and [TensorRT](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html).
