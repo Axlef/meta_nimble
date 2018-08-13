@@ -2,6 +2,8 @@
 
 This repository contains the implementation of an architecture for skeleton detection and tracking, followed by simple gesture and action recognition.
 
+![alt-text-1](https://raw.githubusercontent.com/Axlef/meta_nimble/master/img/tracker.png) ![alt-text-2](https://raw.githubusercontent.com/Axlef/meta_nimble/master/img//clapping.png)
+
 ## Requirements
 
 * Ubuntu 16.04 (not tested on other version or linux distrib)
@@ -31,10 +33,9 @@ export PYTHONPATH=${PYTHONPATH}:/PATH_TO_META_FOLDER/tracker
 
 ## Quick Run
 
-Openpose requires a pre-trained model, converted to TensorRT format. Also note that this modified version of Openpose with TensorRT only supports a fixed resolution image, `240x320` (width x height) in the current code. Please refer to the openpose-rt README for instructions on how to update the code for another resolution and generate the associated model.
-[Download](https://drive.google.com/drive/folders/1YYtXBBpVhDlS8bw8OZ4lWBB4sFUHvG0g?usp=sharing) the pre-trained model folder for the `240x320` resolution. Ensure that the TensorRT model is located in `openpose-models/240x320/tensorrt` with the name `rt_model.gie`.
+Openpose requires a pre-trained model, converted to TensorRT format. Also note that this modified version of Openpose with TensorRT only supports a fixed resolution image, `240x320` (width x height) in the current code. Please refer to the openpose-rt README for instructions on how to update the code for another resolution and generate the associated model. Ensure that the TensorRT model is located in `openpose-models/240x320/tensorrt` with the name `rt_model.gie`.
 
-The gesture detector (i.e. Nimble) also requires a pre-trained model. The instructions for training a model can be found in the README of the actual nimble repository. Pre-trained models are also available for different action sets. [Download](https://drive.google.com/drive/folders/1jX7KAMbARHD8-7QM8RPcnOus5Pmy-UHu?usp=sharing) the folder `nimble-models` containing the models (one model for a set of action) and place it in the root of the project (alongside the submodules).
+The gesture detector (i.e. Nimble) also requires a pre-trained model. The instructions for training a model can be found in the README of the actual nimble repository. Pre-trained models are also available for different action sets. The folder `nimble-models` in the nimble repository already contains pre-trained models (one model for a set of action).
 
 Multiple scripts are available depending on which modules you want to use (e.g. skeleton extraction only, skeleton detection and tracking etc.).
 
