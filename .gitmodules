@@ -1,3 +1,9 @@
 [submodule "openpose"]
 	path = openpose
 	url = https://github.com/Axlef/openpose.git
+[submodule "PyOpenPose"]
+	path = PyOpenPose
+	url = https://github.com/Axlef/PyOpenPose.git
+[submodule "tracker"]
+	path = tracker
+	url = https://github.com/Axlef/tracker.git
